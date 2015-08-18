@@ -1,0 +1,60 @@
+@keyframes fadey {
+  0% {
+    opacity: 0;
+  }
+  15% {
+    opacity: 1;
+  }
+  85% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+/* line 8, ../sass/css-fullscreen.scss */
+#slideshow {
+  width: 80%;
+  margin: 0 auto;
+  position: relative;
+  border: 1px solid #fff;
+  cursor: pointer;
+}
+/* line 15, ../sass/css-fullscreen.scss */
+#slideshow img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: auto;
+  opacity: 0;
+}
+
+/* line 28, ../sass/css-fullscreen.scss */
+#container:fullscreen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+}
+
+/* line 34, ../sass/css-fullscreen.scss */
+#container:-moz-full-screen figure,
+#container:-ms-full-screen figure,
+#container:-webkit-fullscreen figure,
+#container:fullscreen figure {
+  width: 100%;
+  margin: 0 auto;
+  background: #fff;
+}
+
+/* line 42, ../sass/css-fullscreen.scss */
+:-webkit-full-screen {
+  width: 100%;
+  height: 100%;
+}
+
+/* line 46, ../sass/css-fullscreen.scss */
+*:-webkit-full-screen, *:-moz-full-screen {
+  background: #fff;
+}
